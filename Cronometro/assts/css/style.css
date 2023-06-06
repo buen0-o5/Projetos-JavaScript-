@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: rgb(15, 106, 134);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, #3690ac, #2ba4c9,#60b8d3 );
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.conteiner {
+  max-width: 500px;
+  height: 555px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+form input:focus {
+    outline: 1px solid var(--primasry-color);
+  }
+
+   button{
+    background-color: #2784af;
+    color: #fff;
+  
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+    position: relative;
+    bottom: 90px;
+    
+   
+  }
+  .control-button,
+  .control-button-met{
+    background-image: linear-gradient(to bottom, #a3d9e9, #2ba4c9,#60b8d3 );
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .control-button{
+    width:250px;
+    height: 50px;
+  }
+  .control-button-met{
+      width:410px;
+      height: 50px;
+  }
+
+  button:hover{
+    background: #94d6eb;
+    border:none;
+  }
+  /* form button:active{
+    background: var(--primary-color-darkers) ;
+  } */
+  .relogio{
+  font-size: 3.5em;
+  font-weight: bolder;
+  }
+  .pausado{
+    color: rgb(255, 70, 70);
+  }
+
+  div.cronometro{
+  background-image: linear-gradient(to bottom, #a3d9e9, #2ba4c9,#0f7999 );
+  border-radius: 50em;
+  height: 12em;
+  width: 12em;
+  text-align: center;
+  margin: 15px auto;
+  }
+  div p{
+    padding-top: 100px;
+    color: #fff;
+  }

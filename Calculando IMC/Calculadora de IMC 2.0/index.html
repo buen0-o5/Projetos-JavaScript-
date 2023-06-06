@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcule seu IMC</title>
+    <link rel="stylesheet" href="./assts/css/style.css" />
+  </head>
+  <body>
+    <script src="./assts/js/main.js" defer></script>
+    <section class="conteiner">
+      <h1>Tabela IMC</h1>
+      <div id="result-container">
+        <div id="imc-table">
+          <div class="table-header">
+            <h4>IMC</h4>
+            <h4>Classificaçao</h4>
+            <h4>Obsidade</h4>
+          </div>
+        </div>
+      </div>
+
+     
+      <h1>Calcule seu IMC</h1>
+      <form class="conteiner" id="formulario" action="">
+        <label for="input-Peso">Peso:</label>
+        <input type="text" id="weight" class="weight" placeholder="ex:50,7"/>
+
+        <label for="input-Altura">Altura</label>
+        <input type="text" id="height" class="height" placeholder="ex:1,75"  />
+
+        <button id="calc-btn">Enviar</button>
+        <div id="resultado"></div>
+      </form>
+    </section>
+  </body>
+</html>

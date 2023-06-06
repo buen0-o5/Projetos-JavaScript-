@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: rgb(15, 106, 134);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+
+}
+
+.conteiner {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+form input:focus {
+    outline: 1px solid var(--primasry-color);
+  }
+
+  form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18x;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+
+  }
+
+  form button:hover{
+    background: var(--primary-color-darker) ;
+  }
+  /* form button:active{
+    background: var(--primary-color-darkers) ;
+  } */
+
+/* Table */
+#result-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#imc-number {
+  font-size: 2.4rem;
+  margin-bottom: 0.6rem;
+}
+
+imc-info{
+  font-size: 1.4rem;
+}
+
+result-container h3{
+  margin-top: rem;
+  color: #dfdf;
+}
+
+imc-table{
+  margin: 1.5rem;
+  font-size: 0.4rem;
+}
+
+.table-header{
+  font-weight: bold;
+  color: #ccc;
+}
+
+.table-header,
+.table-data{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #444;
+}
+
+
+.table-header h4,
+.table-data p{
+flex: 1;
+}
+  
+
+
+.good {
+  background-color: #12db34;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.low {
+  background-color: #dbce12;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.medium {
+  background-color: #db6212;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.high {
+  background-color: #db1912;
+  color: #fff;
+  font-weight: bold;
+  font-size: 19px;
+}

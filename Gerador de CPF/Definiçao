@@ -1,0 +1,17 @@
+Este código JavaScript define três funções: gerarCPF(), calcularDV() e formatarCPF(), além de dois event listeners para os botões "Gerar CPF" e "Copiar CPF".
+
+A função gerarCPF() é responsável por gerar um número de CPF aleatório e exibi-lo na tela. Ela utiliza a função Math.random() para gerar um número aleatório entre 1 e 999999999, que é então convertido em uma string de 9 dígitos e tem seus dígitos verificadores calculados pela função calcularDV(). O resultado final é formatado como um CPF válido pela função formatarCPF() e exibido na tela.
+
+A função calcularDV() é utilizada pela função gerarCPF() para calcular os dígitos verificadores de um número de CPF. Ela recebe como parâmetros o número do CPF (como uma string de 9 dígitos) e o peso a ser utilizado na fórmula de cálculo do dígito verificador (10 para o primeiro dígito e 11 para o segundo). A função percorre cada dígito do número do CPF, da direita para a esquerda, multiplicando cada dígito pelo peso correspondente e somando os resultados. Em seguida, o total da soma é dividido por 11 e o resto da divisão é calculado. Se o resto da divisão for menor que 2, o dígito verificador é 0. Caso contrário, o dígito verificador é calculado subtraindo-se o resto de 11. O resultado final é o dígito verificador calculado pela função calcularDV().
+
+A função formatarCPF() é utilizada pela função gerarCPF() para formatar um número de CPF como uma string no formato XXX.XXX.XXX-XX. Ela utiliza uma expressão regular para separar os dígitos do CPF em quatro grupos (três grupos de três dígitos e um grupo de dois dígitos) e insere pontos e traço entre esses grupos.
+
+A função copiarCPF() é responsável por copiar o CPF gerado para a área de transferência do sistema operacional. Ela utiliza o método navigator.clipboard.writeText() para escrever o CPF na área de transferência e exibe uma mensagem de confirmação em caso de sucesso ou um erro em caso de falha.
+
+Os event listeners para os botões "Gerar CPF" e "Copiar CPF" são adicionados ao final do código, e são responsáveis por chamar as funções correspondentes quando o usuário clica nesses botões.
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #dfc5eb;
+  --primary-color-darker: #9c3ddc;
+  --cor8: #6b30b8;
+	--cor9: #774caf;
+	--cor10: #fff;
+  --cor11: #8465ac;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.conteiner {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+ input {
+  font-size: 24px;
+  margin: 3.5rem auto;
+}
+
+input:focus {
+  outline: 1px solid var(--primasry-color);
+}
+
+.btn-tarefa {
+  background-color: var(--cor9);
+  border: none;
+  color: var(--cor10);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  width: 145px;
+  height: 37px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  margin: 3.5rem auto;
+}
+
+.btn-tarefa:hover,
+.apagar:hover{
+  background-color: var(--cor11);
+  box-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.apagar{
+  background-color: var( --primary-color-darker);
+  border: none;
+  color: var(--cor10);
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+  padding: 0.3rem 1.2rem;
+}
